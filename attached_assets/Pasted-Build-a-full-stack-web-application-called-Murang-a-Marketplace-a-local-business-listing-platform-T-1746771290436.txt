@@ -1,0 +1,75 @@
+Build a full-stack web application called Murang'a Marketplace, a local business listing platform. The site should have the following key features:
+1. User Roles
+
+    Admin (site owner) — full access to manage listings, users, and payments.
+
+    Business Owners — can register and manage their business after payment.
+
+    Customers — can browse and search businesses.
+
+2. Business Registration Workflow
+
+    Business owners must choose a payment plan:
+
+        KES 200/month
+
+        KES 3,000/year
+
+    After selecting a plan, the system should prompt for M-Pesa payment. Integrate with Safaricom Daraja API to:
+
+        Trigger STK Push to number 0714092658 (site owner's number).
+
+        Let the user enter their M-Pesa PIN.
+
+        Confirm payment before allowing business registration.
+
+    Only after successful payment, allow the business to:
+
+        Fill out a registration form with business name, location (Murang’a sub-counties), category (e.g., retail, service, food), contact info, and logo/photo.
+
+3. Customer Features
+
+    Search and filter businesses by name, category, or location.
+
+    View business details (description, contact, image).
+
+    Leave reviews/ratings (optional).
+
+4. Admin Panel
+
+    Login protected admin dashboard.
+
+    View and manage all businesses, payments, and users.
+
+    Suspend or delete businesses.
+
+    View payment history and subscription status.
+
+5. Other Key Features
+
+    Responsive design for mobile and desktop.
+
+    Email or SMS notifications for confirmations (optional).
+
+    Automatic subscription renewal reminders via SMS (optional).
+
+    Secure authentication (JWT or similar).
+
+    Backend: Node.js / Express or Django
+
+    Frontend: React / Vue or standard HTML/CSS/JS
+
+    Database: MongoDB or PostgreSQL
+
+Tech Stack Suggestions (optional):
+
+    Backend: Node.js + Express
+
+    Frontend: React
+
+    Database: MongoDB
+
+    Payment Integration: Safaricom Daraja API for M-Pesa
+
+    Hosting: Replit deployment + optional database on MongoDB Atlas
+
